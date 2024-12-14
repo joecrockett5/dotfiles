@@ -34,6 +34,8 @@ alias python="python3"
 alias py="python"
 alias t="tmux"
 alias ta="tmux attach -t"
+alias td="tmux detach"
+alias tn="tmux new -s "
 alias add="git add"
 alias commit="git commit"
 alias ffs="fuck"
@@ -101,7 +103,7 @@ _fzf_comprun() {
 }
 
 # Set up fzf-git
-source ~/fzf-git.sh/fzf-git.sh
+source ~/fzf-git.sh
 
 # bat (better cat)
 
