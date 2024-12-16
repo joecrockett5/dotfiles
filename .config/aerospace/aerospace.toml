@@ -199,9 +199,9 @@ run = ['layout floating', 'move-node-to-workspace R']
 if.app-id = "com.apple.finder"
 run = ['layout floating', 'move-node-to-workspace F']
 
-[[on-window-detected]]
-if.app-id = "company.thebrowser.Browser"
-run = 'move-node-to-workspace A'
+# [[on-window-detected]]
+# if.app-id = "company.thebrowser.Browser"
+# run = 'move-node-to-workspace A'
 
 [[on-window-detected]]
 if.app-id = "com.github.wez.wezterm"
