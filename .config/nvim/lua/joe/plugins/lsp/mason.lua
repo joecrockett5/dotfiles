@@ -39,6 +39,7 @@ return {
 				"emmet_ls",
 				"prismals",
 				"pyright",
+				"jdtls",
 			},
 		})
 
