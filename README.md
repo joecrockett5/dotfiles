@@ -54,6 +54,8 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 tmux source ~/.tmux.conf
 ```
 
+You can then press `ctrl+a + I` to install the plugins
+
 ## Java
 
 You may need to create a symlink to the java home directory
