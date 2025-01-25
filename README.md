@@ -53,3 +53,12 @@ Install TPM and source the config with the following command
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 tmux source ~/.tmux.conf
 ```
+
+## Java
+
+You may need to create a symlink to the java home directory
+
+```
+sudo ln -sfn /opt/homebrew/opt/openjdk/libexec/openjdk.jdk \
+     /Library/Java/JavaVirtualMachines/openjdk.jdk
+```
