@@ -30,8 +30,12 @@ source $ZSH/oh-my-zsh.sh
 
 alias vi="nvim"
 alias vim="nvim"
+
 alias python="python3"
 alias py="python"
+alias venv="python3 -m venv .venv"
+alias pysrc="source .venv/bin/activate"
+
 alias t="tmux"
 alias ta="tmux attach -t"
 alias td="tmux detach"
@@ -40,6 +44,9 @@ alias add="git add"
 alias commit="git commit"
 alias ffs="fuck"
 
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - zsh)"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -123,3 +130,4 @@ eval $(thefuck --alias fk)
 eval "$(zoxide init zsh)"
 
 alias cd="z"
+

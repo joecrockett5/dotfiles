@@ -241,3 +241,11 @@ run = 'layout floating'
 [[on-window-detected]]
 if.app-id = "com.apple.Passwords"
 run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = "com.openai.chat"
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = "md.obsidian"
+run = 'move-node-to-workspace O'
