@@ -43,7 +43,6 @@ key-mapping.preset = 'qwerty'
 # See https://nikitabobko.github.io/AeroSpace/guide#on-focus-changed-callbacks
 # See https://nikitabobko.github.io/AeroSpace/commands#move-mouse
 on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
-on-focus-changed = ['move-mouse window-lazy-center']
 
 # Gaps between windows (inner-*) and between monitor edges (outer-*).
 # Possible values:
@@ -190,3 +189,71 @@ alt-shift-h = ['join-with left', 'mode main']
 alt-shift-j = ['join-with down', 'mode main']
 alt-shift-k = ['join-with up', 'mode main']
 alt-shift-l = ['join-with right', 'mode main']
+
+[[on-window-detected]]
+if.app-id = "net.ankiweb.dtop"
+run = ['layout floating', 'move-node-to-workspace R']
+
+[[on-window-detected]]
+if.app-id = "com.apple.finder"
+run = ['layout floating', 'move-node-to-workspace F']
+
+# [[on-window-detected]]
+# if.app-id = "company.thebrowser.Browser"
+# run = 'move-node-to-workspace A'
+
+[[on-window-detected]]
+if.app-id = "com.github.wez.wezterm"
+run = 'move-node-to-workspace D'
+
+[[on-window-detected]]
+if.app-id = "com.apple.mail"
+run = 'move-node-to-workspace E'
+
+[[on-window-detected]]
+if.app-id = "com.TickTick.task.mac"
+run = 'move-node-to-workspace T'
+
+[[on-window-detected]]
+if.app-id = "com.apple.iCal"
+run = 'move-node-to-workspace T'
+
+[[on-window-detected]]
+if.app-id = "com.apple.Notes"
+run = 'move-node-to-workspace N'
+
+[[on-window-detected]]
+if.app-id = "com.apple.MobileSMS"
+run = ['layout floating', 'move-node-to-workspace C']
+
+[[on-window-detected]]
+if.app-id = "com.hnc.Discord"
+run = ['layout floating', 'move-node-to-workspace C']
+
+[[on-window-detected]]
+if.app-id = "com.apple.Preview"
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = "com.microsoft.VSCode"
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = "com.apple.Passwords"
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = "com.openai.chat"
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = "net.java.openjdk.java"
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = "org.virtualbox.app.VirtualBox"
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = "md.obsidian"
+run = 'move-node-to-workspace O'

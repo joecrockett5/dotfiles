@@ -34,9 +34,5 @@ return {
 		keymap.set("n", "<leader>ps", "<cmd>Telescope live_grep<cr>", { desc = "Find string in cwd" })
 		keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>", { desc = "Find string under cursor in cwd" })
 		keymap.set("n", "<leader>ft", "<cmd>TodoTelescope<cr>", { desc = "Find todos" })
-		-- local builtin = require("telescope.builtin")
-		-- keymap.set("n", "<leader>ps", function()
-		-- 	builtin.grep_string({ search = vim.fn.input("Grep > ") })
-		-- end)
 	end,
 }

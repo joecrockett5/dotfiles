@@ -34,16 +34,24 @@ source $ZSH/oh-my-zsh.sh
 
 alias vi="nvim"
 alias vim="nvim"
+
 alias python="python3"
 alias py="python"
+alias venv="python3 -m venv .venv"
+alias pysrc="source .venv/bin/activate"
+
 alias t="tmux"
 alias ta="tmux attach -t"
-alias tn="tmux new -s"
 alias td="tmux detach"
+alias tn="tmux new -s "
 alias add="git add"
 alias commit="git commit"
 alias ffs="fuck"
 alias sdocker="sudo docker"
+
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - zsh)"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -108,7 +116,7 @@ _fzf_comprun() {
 }
 
 # Set up fzf-git
-source ~/fzf-git.sh/fzf-git.sh
+source ~/fzf-git.sh
 
 # bat (better cat)
 
@@ -127,7 +135,3 @@ eval $(thefuck --alias fk)
 eval "$(zoxide init zsh)"
 
 alias cd="z"
-
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init - zsh)"
