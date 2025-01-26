@@ -247,5 +247,13 @@ if.app-id = "com.openai.chat"
 run = 'layout floating'
 
 [[on-window-detected]]
+if.app-id = "net.java.openjdk.java"
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = "org.virtualbox.app.VirtualBox"
+run = 'layout floating'
+
+[[on-window-detected]]
 if.app-id = "md.obsidian"
 run = 'move-node-to-workspace O'
