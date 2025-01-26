@@ -49,7 +49,7 @@ return {
 				"stylua", -- lua formatter
 				"isort", -- python formatter
 				"black", -- python formatter
-				--				"pylint", -- python linter
+				"debugpy", -- python debugger
 				"eslint_d", -- js linter
 			},
 		})
