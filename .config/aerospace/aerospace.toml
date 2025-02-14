@@ -261,3 +261,7 @@ run = 'move-node-to-workspace O'
 [[on-window-detected]]
 if.app-id = "com.electron.dockerdesktop"
 run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = "com.microsoft.teams2"
+run = 'layout floating'
